@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffebcd;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#cake {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background-color: yellow;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.candle.blown {
+  background-color: gray;
+}
