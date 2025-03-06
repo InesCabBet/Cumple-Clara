@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz Cumpleaños!</h1>
+        <div id="cake">
+            <div class="candle"></div>
+        </div>
+        <button id="blowCandle">Soplar vela</button>
+    </div>
+    <script src="birthdayCake.js"></script>
+    <script src="heartsAnimation.js"></script>
+    <script>
+        document.getElementById('blowCandle').addEventListener('click', function() {
+            document.querySelector('.candle').classList.add('blown');
+            generateHearts();
+        });
+    </script>
+</body>
+</html>
